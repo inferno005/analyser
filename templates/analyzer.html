@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotion Analyzer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Emotion Analyzer</h1>
+        <textarea id="text-input" rows="4" placeholder="Enter text here..."></textarea>
+        <button id="analyze-button" class="btn">Analyze Emotion</button>
+        <button id="voice-button" class="btn">Speak to Text</button>
+        <div id="result"></div>
+        <a href="/" class="btn">Back to Home</a>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
